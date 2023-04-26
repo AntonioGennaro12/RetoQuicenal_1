@@ -6,7 +6,8 @@
    Parte #3
   Agrego Imagen y cambio con el ingreso de datos. 
   Parte #4
-  Se agreg pedir una clave y chequearla
+  Se agrega pedir una clave y chequearla
+  Seincluyen mejoras estéticas.
 */
 
 const EDAD_MAYOR  = 18;
@@ -25,6 +26,7 @@ const dnidUsr     = document.querySelector ("#lab-dni");
 const clavSecr    = document.querySelector ("#lab-pass");
 const topImg      = document.querySelector ("#mi-img");
 
+var   misLineas   = document.querySelectorAll ("p");
 const impLinea1   = document.querySelector ("#mi-msg1");
 const impLinea2   = document.querySelector ("#mi-msg2");
 const impLinea3   = document.querySelector ("#mi-msg3");
@@ -48,16 +50,11 @@ function datosIngresados() {
 
     topImg.src       = IMG_CLICK ;
 
-    impLinea1.style.fontFamily = "monospace";
-    impLinea2.style.fontFamily = "monospace";
-    impLinea3.style.fontFamily = "monospace";
-    impLinea4.style.fontFamily = "monospace";
-    impLinea5.style.fontFamily = "monospace";
-    impLinea1.style.color      = "yellow";
-    impLinea2.style.color      = "yellow";
-    impLinea3.style.color      = "yellow";
-    impLinea4.style.color      = "yellow";
-    impLinea5.style.color      = "yellow";
+    for (var i = 0; i < misLineas.length; i++) { 
+      misLineas[i].style.fontFamily = "monospace";
+      misLineas[i].style.color      = 'yellow'; 
+    }
+    
     impLinea5.style.fontSize   = "18px";
 
     impLinea1.textContent = "Nombre de Usuario....: "+nomUsrIngr+"";

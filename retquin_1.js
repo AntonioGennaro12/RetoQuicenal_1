@@ -11,10 +11,10 @@
 */
 
 const EDAD_MAYOR  = 18;
-const IMG_BASE    = "PanelRegístreseAquí.png";
-const IMG_CLICK   = "transparent-teamwork-empresa.png";
-const IMG_CLICK2  = "gears-g239ca9ba4_1280.jpg";
-const IMG_ACCDEN  = "AccesoDenegado.png";
+const IMG_BASE    = "Panel_CFP5_RegistAqui.png";
+const IMG_CLICK   = "CFP5_teamwork.png";
+const IMG_CLICK2  = "funny_gears-CFP5.jpg";
+const IMG_ACCDEN  = "AccesoDenegado_CFP5.png";
 
 const CLAVE_SECR  = "cfp5";
 
@@ -79,7 +79,7 @@ function datosIngresados() {
     impLinea2.textContent     = "";
     impLinea3.textContent     = "";
     impLinea4.textContent     = "";
-    impLinea5.style.fontSize  = "22px";
+    impLinea5.style.fontSize  = "20px";
     impLinea5.style.color     = "red";
     impLinea5.textContent     = "Lo sentimos " +nomUsrIngr +", la clave es incorrecta!!!";
   }
